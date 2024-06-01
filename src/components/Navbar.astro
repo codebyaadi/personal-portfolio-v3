@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import { Button } from '@/components/ui/button';
+import Logo from '@/assets/logo.svg';
+---
+
+<nav class="flex justify-between items-center px-4 md:px-6 lg:px-20 py-4">
+    <div>
+        <a href="/">
+            <h2 class="font-unbounded text-white text-2xl">a.</h2>
+        </a>
+    </div>
+    <div>
+        <Button className="rounded-full">
+            Menu
+        </Button>
+    </div>
+</nav>

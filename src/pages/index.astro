@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import "@/styles/globals.css";
+import { Spotlight } from "@/components/ui/spotlight";
+---
+
+<Layout title="Welcome to Aditya's Portfolio">
+  <main class="bg-[#09090b]">
+    <section
+      class="h-[40rem] w-full rounded-md flex md:items-center md:justify-center relative overflow-hidden antialiased"
+    >
+      <div class="w-full h-[32rem] flex flex-col justify-center items-center">
+        <h2
+          class="w-full bg-linear-gradient bg-clip-text text-center text-transparent text-6xl font-syne font-bold"
+        >
+          Hello! I'm Aditya
+        </h2>
+        <div class="w-[40rem] h-40 relative overflow-hidden">
+          <p class="text-white/75 font-prompt w-full text-center mt-1">
+            A passionate Software Enggineer from India.
+          </p>
+          {/* Gradients */}
+          <div
+            class="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-500 to-transparent h-[2px] w-3/4 blur-sm"
+          >
+          </div>
+          <div
+            class="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-500 to-transparent h-px w-3/4"
+          >
+          </div>
+          <div
+            class="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-yellow-500 to-transparent h-[5px] w-1/4 blur-sm"
+          >
+          </div>
+          <div
+            class="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-yellow-500 to-transparent h-px w-1/4"
+          >
+          </div>
+
+          {/* Radial Gradient to prevent sharp edges */}
+          <div
+            class="absolute inset-0 w-full h-full bg-[#09090b] [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"
+          >
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
