@@ -1,0 +1,20 @@
+---
+import Frontend from "./skills/Frontend.astro";
+import Backend from "./skills/Backend.astro";
+import Database from "./skills/Database.astro";
+import Tools from "./skills/Tools.astro";
+import Others from "./skills/Others.astro";
+---
+
+<div class="h-[40rem] px-4 md:px-6 lg:px-20 w-full rounded-md flex flex-col md:items-center md:justify-center gap-2 relative overflow-hidden antialiased">
+    <!-- {skills_data.map((data) => <SkillCard title={data.title} techlist={data.techlist} />)} -->
+    <div class="w-full flex justify-between items-center gap-2">
+        <Frontend />
+    <Backend />
+    </div>
+    <div class="w-full flex justify-between items-center gap-2">
+        <Database />
+        <Tools />
+        <Others />
+    </div>
+</div>

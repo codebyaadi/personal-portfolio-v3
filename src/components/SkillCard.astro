@@ -1,0 +1,17 @@
+---
+interface Props {
+    title: string;
+    techlist: string[];
+}
+
+const { title, techlist } = Astro.props;
+---
+
+<div class="w-64 h-64 p-3 bg-primary hover:bg-primary/90 text-primary-foreground tracking-wide rounded-md">
+    <h1 class="bg-linear-gradient bg-clip-text text-transparent text-xl font-syne font-bold">
+        {title}
+    </h1>
+    <ul class="font-prompt text-sm text-white/35">
+        {techlist.map((list) => <li>{list}</li>)}
+    </ul>
+</div>

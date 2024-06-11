@@ -1,8 +1,9 @@
 ---
+import FloatLabel from "@/components/FloatLabel.astro";
 import Layout from "../layouts/Layout.astro";
 
 import "@/styles/globals.css";
-import { Spotlight } from "@/components/ui/spotlight";
+import MySkills from "@/components/MySkills.astro";
 ---
 
 <Layout title="Welcome to Aditya's Portfolio">
@@ -46,5 +47,7 @@ import { Spotlight } from "@/components/ui/spotlight";
         </div>
       </div>
     </section>
+    <MySkills />
+    <FloatLabel />
   </main>
 </Layout>
